@@ -1,4 +1,7 @@
 def print_numbers(start, end):
+    if end < start:
+        for i in range(start, end - 1, -1):
+            print(i)
     for i in range(start, end + 1):
         print(i)
 start_number = int(input("Enter a starting number: "))
